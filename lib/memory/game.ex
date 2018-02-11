@@ -107,7 +107,7 @@ defmodule MemoryWeb.Game do
         %{value: "G", flipped: false, matched: false},
         %{value: "H", flipped: false, matched: false},
     ]
-#    cards = Enum.shuffle(cards)
+    cards = Enum.shuffle(cards)
     new_map = Stream.zip(Stream.iterate(0, &(&1+1)), cards) |> Enum.into(%{})
     for {key, val} <- new_map, into: %{}, do: {Kernel.inspect(key), val}
   end
