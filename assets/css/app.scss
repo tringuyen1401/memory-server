@@ -1,0 +1,30 @@
+/* This file is for your main application css. */
+
+@import "bootstrap";
+
+h1 { text-align: center; }
+
+.score{
+  font-size:32px;
+  text-align:center;
+}
+
+.board{
+  width:80%;
+  height:100%;
+  padding:10px;
+  margin:0px auto;
+}
+
+.card{
+  background: #FFF no-repeat;
+  border:#000 1px solid;
+  width:20%;
+  height:20%;
+  float:left;
+  margin:10px;
+  padding:20px;
+  font-size:64px;
+  cursor:pointer;
+  text-align:center;
+}
